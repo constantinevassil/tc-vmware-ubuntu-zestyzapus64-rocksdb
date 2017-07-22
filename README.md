@@ -58,8 +58,8 @@ vagrant ssh tcmaster01
 Update packages:
 
 ```bash
-ubuntu@tc-rocksdb:~$ sudo apt-get update && sudo apt-get dist-upgrade
-ubuntu@tc-rocksdb:~$ sudo apt-get -y install make llvm g++ libgflags-dev libsnappy-dev  zlib1g-dev libbz2-dev liblz4-dev libzstd-dev
+vagrant@tcmaster01:~$ sudo apt-get update && sudo apt-get dist-upgrade
+vagrant@tcmaster01:~$ sudo apt-get -y install make llvm g++ libgflags-dev libsnappy-dev  zlib1g-dev libbz2-dev liblz4-dev libzstd-dev
 ```
 
 compiling RocksDB static library in release mode:
@@ -80,7 +80,7 @@ Install latest Golang:
 
 ```bash
 cd ..
-ubuntu@tc-rocksdb:/vagrant$ sudo add-apt-repository ppa:longsleep/golang-backports
+ubuntu@tc-rocksdb:/vagrant$ sudo -s
 ubuntu@tc-rocksdb:/vagrant$ sudo apt-get update
 ubuntu@tc-rocksdb:/vagrant$ sudo apt-get install golang-go
 ```
