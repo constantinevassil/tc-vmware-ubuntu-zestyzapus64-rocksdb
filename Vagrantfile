@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder ENV['HOME'], "/myhome", type: "nfs"
 
     config.vm.provider "vmware_fusion" do |v|
-      v.memory = 16384
+      v.memory = 4096
       v.cpus = 1
     end
  
