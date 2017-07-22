@@ -65,11 +65,11 @@ vagrant@tcmaster01:~$ sudo apt-get -y install make llvm g++ libgflags-dev libsna
 compiling RocksDB static library in release mode:
 
 ```bash
-ubuntu@tc-rocksdb:~$ cd /vagrant/rocksdb
-ubuntu@tc-rocksdb:/vagrant/rocksdb$ make static_lib 
+vagrant@tcmaster01:~$ cd /vagrant/rocksdb
+vagrant@tcmaster01:/vagrant/rocksdb$ make static_lib 
 
 ...
-ubuntu@tc-rocksdb:/vagrant/rocksdb$ ar: creating librocksdb.a
+vagrant@tcmaster01:/vagrant/rocksdb$ ar: creating librocksdb.a
 ```
 
 The resulting RocksDB static library (343 MB) is in 
@@ -80,17 +80,16 @@ Install latest Golang:
 
 ```bash
 cd ..
-ubuntu@tc-rocksdb:/vagrant$ sudo -s
-ubuntu@tc-rocksdb:/vagrant$ sudo apt-get update
-ubuntu@tc-rocksdb:/vagrant$ sudo apt-get install golang-go
+vagrant@tcmaster01:/vagrant$ sudo -s
+root@tcmaster01:/vagrant$ snap install --classic go
+root@tcmaster01:/vagrant$ exit
 ```
 
 Check Golang version:
 
 ```bash
-ubuntu@tc-rocksdb:/vagrant$ go version
-ubuntu@tc-rocksdb:/vagrant$ 
-go version go1.7.4 linux/amd64
+vagrant@tcmaster01:/vagrant$ go version
+go version go1.8.3 linux/amd64
 ```
 
 ### Set the GOPATH environment variable
