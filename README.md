@@ -90,7 +90,7 @@ Check Golang version:
 ```bash
 ubuntu@tc-rocksdb:/vagrant$ go version
 ubuntu@tc-rocksdb:/vagrant$ 
-go version go1.8.3 linux/amd64
+go version go1.7.4 linux/amd64
 ```
 
 ### Set the GOPATH environment variable
