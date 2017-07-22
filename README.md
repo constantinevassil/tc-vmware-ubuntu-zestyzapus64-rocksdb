@@ -1,4 +1,4 @@
-# tc-vmware-ubuntu-zestyzapus64-17.04-rocksdb
+# tc-vmware-ubuntu-zestyzapus64-rocksdb
 
 Ubuntu 17.04 Vagrant WMVare Development machine for RocksDB development with Golang.
 
@@ -6,8 +6,8 @@ Ubuntu 17.04 Vagrant WMVare Development machine for RocksDB development with Gol
 
 ```bash
 cd $HOME/Desktop
-git clone https://github.com/topconnector/tc-vmware-ubuntu-zestyzapus64-17.04-rocksdb.git
-cd tc-vmware-ubuntu-zestyzapus64-17.04-rocksdb
+git clone https://github.com/topconnector/tc-vmware-ubuntu-zestyzapus64-rocksdb.git
+cd tc-vmware-ubuntu-zestyzapus64-rocksdb
 ```
 
 You must have the following installed:
