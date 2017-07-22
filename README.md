@@ -52,7 +52,7 @@ git clone https://github.com/facebook/rocksdb.git
 ```
 
 ```bash
-vagrant ssh tc-rocksdb
+vagrant ssh tcmaster01
 ```
 
 Update packages:
