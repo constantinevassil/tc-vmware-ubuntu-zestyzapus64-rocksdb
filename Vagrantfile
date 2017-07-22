@@ -9,8 +9,8 @@ Vagrant.configure("2") do |config|
       v.cpus = 1
     end
  
-    config.vm.define "tc-master01" do |node|
-      node.vm.hostname = "tc-master01"
+    config.vm.define "tcmaster01" do |node|
+      node.vm.hostname = "tcmaster01"
       node.vm.network "private_network", type: "dhcp"
 
       # Use NFS for shared folders for better performance
