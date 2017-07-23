@@ -103,7 +103,7 @@ export GOPATH=/vagrant/mygo
 ### Compile gorocksdb, a Go wrapper for RocksDB
 
 ```bash
-CGO_CFLAGS="-I/vagrant/rocksdb/include" \
+vagrant@tcmaster01:~$ CGO_CFLAGS="-I/vagrant/rocksdb/include" \
 CGO_LDFLAGS="-L/vagrant/rocksdb -lrocksdb -lstdc++ -lm -lz -lbz2 -lsnappy -llz4 -lzstd" \
   go get github.com/tecbot/gorocksdb
 ```
@@ -111,4 +111,8 @@ The generated library (1 MB) is stored on the Mac host:
 
 $HOME/Desktop/tc-vmware-ubuntu-zestyzapus64-rocksdb/mygo/pkg/linux_amd64/github.com/tecbot/gorocksdb.a
 
+```bash
+vagrant@tcmaster01:~$ cd /vagrant/mygo/src/tc-rocksdb-list
+vagrant@tcmaster01:/vagrant/mygo/src/tc-rocksdb-list$ cp /vagrant/rocksdb/librocksdb.a librocksdb.a
 
+```
